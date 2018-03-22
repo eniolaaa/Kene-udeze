@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kene Udeze</title>
+	<title>'Kene Udeze</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="style.css">
@@ -14,7 +14,7 @@
 }
 h1 h2 h3 h4 {
 	margin: 0;
-	font-weight: 500;
+	font-weight: 300;
 }
 a{
 	text-decoration: none;
@@ -28,7 +28,7 @@ body {
   font-size: 18px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: 300;
   vertical-align: baseline;
   background: #0E0E0E;
   margin:0;
@@ -50,12 +50,12 @@ header .text {
   z-index: 9;
 }
 header .text .left h4 {
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
   color: #fff;
 }
 header .text .left h1 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 40px;
   padding: 10px 0;
   margin-bottom: 20px;
@@ -85,7 +85,7 @@ header .text .left ul li a {
 header .underlay {
   background: url(kene.png) no-repeat;
   background-size: 300px;
-  background-position: right 20% top;
+  background-position: right 10% top;
   position: absolute;
   background-attachment: fixed;
   top: 0;
@@ -101,10 +101,16 @@ header .underlay {
 }
 .select h3{
 	padding: 50px 0px;
-  font-size: 40px;
+  font-size: 30px;
   position: relative;
   color: black;
   font-weight: 600;
+}
+.figure{
+	-webkit-margin-before: 1em;
+	-webkit-margin-after:1em;
+	-webkit-margin-start: 40px;
+	-webkit-margin-end:40px;
 }
 #project{
 	background-color: white;
@@ -118,6 +124,12 @@ header .underlay {
   color: #000;
   font-size: 25px;
   margin-bottom: 10px;
+}
+#project .text h3:after{
+	border: 2px solid #09D261;
+	display: table;
+	width: 25px;
+	content: "";
 }
 #project .text p {
   color: #444;
@@ -140,6 +152,10 @@ header .underlay {
   background: url(browser-bg.png) no-repeat;
   background-size: 100%;
   padding-top: 4.5%;
+  transition: all 0.2s ease-in;
+}
+img:hover{
+	box-shadow: 0px 15px 50px -5px #cccccc;
 }
 #project .image figure {
 	position: relative;
@@ -156,7 +172,7 @@ img {
 	vertical-align: middle;
 }
 footer{
-	padding: 60px;
+	padding: 60px 0;
 }
 footer .contact{
 width: 50%;
@@ -164,13 +180,13 @@ margin: 0 auto;
 text-align: center;
 }
 footer .contact h3{
-	font-size: 35px;
+	font-size: 30px;
 	padding-bottom: 30px;
-	font-weight: 600;
+	font-weight: 500;
+	text-align: center;
 }
 footer .contact p {
 	margin-top: 20px;
-	text-transform: uppercase;
 	display: block;
 	font-size: 15px;
 	font-weight: 500;
@@ -179,13 +195,23 @@ footer .contact p {
 footer .contact p i {
 	margin-right: 5px;
 }
+#correct{
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
 .fa {
 display: inline-block;
+}
+.footer .contact span {
+	color: blue;
 }
 footer .contact p span {
 	display: block;
 	color: #fff;
 	font-size: 18px;
+	text-align: center;
 }
 footer .socialmedia{
 	display: flex;
@@ -194,6 +220,7 @@ footer .socialmedia{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	flex-basis: 25%;
+	margin-left: 30px;
 }
 footer .socialmedia > div {
 	flex-grow: 1;
@@ -202,22 +229,47 @@ a {
 	text-decoration: none !important;
 	outline: none;
 }
+#did{
+	border-bottom: 2px solid #09D261;
+}
 footer .socialmedia > div a {
 	color: inherit;
 	display: block;
 	font-size: 12px;
 }
 footer .socialmedia > div a i {
-	font-size: 40px;
+	font-size: 30px;
 	float: left;
-	margin-right: 5px;
+	margin-right: 10px;
+}
+footer .socialmedia .fa{
+	display:inline-block;
 }
 footer .socialmedia > div a span {
 	display: block;
 	font-size: 16px;
 	line-height: 20px;
-	color: #fff;
+	color:white;
 	font-weight: 400;
+}
+footer .contact span:hover{
+	color: #1771d3
+}
+footer .socialmedia >div.twitter{
+	flex-grow: 1;
+	display: block;
+}
+footer .socialmedia >div.dribble{
+	flex-grow: 1;
+	display: block;
+}
+footer .socialmedia >div.instagram {
+	flex-grow: 1;
+	display: block;
+}
+footer .socialmedia >div.medium{
+	flex-grow: 1;
+	display: block;
 }
 footer  .socialmedia > div.twitter i {
 	color: #55ACEE;
@@ -231,6 +283,18 @@ footer .socialmedia > div.instagram i {
 footer .socialmedia > div.medium i {
 	color: #0BE370;
 }
+footer .socialmedia > div.twitter span:hover{
+	color: #1771d3;
+}
+footer .socialmedia >div.dribble span:hover{
+	color: #ea4c89;
+}
+footer .socialmedia >div.instagram span:hover{
+	color: #7a50c0;
+}
+footer .socialmedia >div.medium span:hover{
+	color:#0be370;
+}
 </style>
 <body>
 <div class="main-wrapper">
@@ -241,7 +305,7 @@ footer .socialmedia > div.medium i {
 				<div class="left col-sm-6">
 					<h4>Hello. I AM</h4>
 					<h1>'Kene Udeze</h1>
-					<p>I am a User Experience (UX) designer based in Lagos, Nigeria. I work <a href="#">@CcHUB</a> where I lead a multidisciplinary team to guide product development for startups across diverse induustries ; ranging from smart infrastructure, community, e-commerce, health & fitness and civic engagement.
+					<p>I am a User Experience (UX) designer based in Lagos, Nigeria. I work <a href="#">@CcHUB</a> where I lead a multidisciplinary team to guide product development for startups across diverse induustries; ranging from smart infrastructure, community, e-commerce, health & fitness and civic engagement.
 				     </p>
 				     <p>I also run <a href="#">USABLE</a>, a community of people(designers, developers, enthusiasts)who are interested in designing usable products.</p>
 				     <ul>
@@ -256,17 +320,17 @@ footer .socialmedia > div.medium i {
 		</div>
 			
 		</div>
-		<div class="underlay" style="opacity: 2">
+		<div class="underlay" style="opacity: 1">
 		</div>
 	</header>
 	<section id="project">
 		<div class="container">
 		<div class="row">
-			<div class="select col-sm-12"><h3>Selected Work</h3></div>
+			<div class="select col-sm-12"><h3><span class=did>S</span>elected Work</h3></div>
 			<div class="works">
 				<div class="text left col-sm-5">
 					<h2>Truppr</h2>
-					<p> Truppr is a social tool that helps sport lovers organoze and find team mates for theor favourite sports in cities around the world</p>
+					<p> Truppr is a social tool that helps sport lovers organize and find team mates for their favourite sports in cities around the world</p>
 					<span>UX & UI Design, Platform Design</span>
 					<a href="http://truppr.com">VISIT WEBSITE</a>
 				</div>
@@ -288,9 +352,9 @@ footer .socialmedia > div.medium i {
 				</div>
 				<div class="text col-sm-5">
 					<h2>Sierra Leone Open Government Partnership(OGP)</h2>
-					<p>SL OGP is a platform for tracking the progres of open government partnership commitments of the gorvernment of Sierra Leone.</p>
+					<p>SL OGP is a platform for tracking the progress of open government partnership commitments of the gorvernment of Sierra Leone.</p>
 					<span> UX & UI Design, Platform Design, App Development</span>
-					<a href="http://sierraleoneogp.com">VISIT WEBSITE</a>
+					<a href="http://sierraleoneogp.com">VISIT WEBSITE &#8594;</a>
 				</div>
 			</div>
 			<div class="works">
@@ -298,13 +362,14 @@ footer .socialmedia > div.medium i {
 					<h2>Tracka</h2>
 					<p>Tracka enables people to collaborate and track capital projects in their community.</p>
 					<span> UX & UI Design, Platform Design</span>
-					<a href="http://tracka.com">VISIT WEBSITE</a>
+					<a href="http://tracka.com">VISIT WEBSITE &#8594;</a>
 				</div>
 				<div class="col-sm-7 col-xs-12">
 					<div class="image">
-					<figure>
-						<img src="tracka (1).jpg">
-					</figure>
+						<figure>
+							<img src="tracka (1).jpg">
+						</figure>
+					</div>
 				</div>
 			</div>
 			<div class="works" >
@@ -319,7 +384,7 @@ footer .socialmedia > div.medium i {
 					<h2>BudgIT's Oil & Gas report</h2>
 					<p> A visual story of NEITI oil & gas extensive reports covering the Nigerian oil & gas sector.</p>
 					<span>UX & UI Design</span>
-					<a href="http://yourbudgit.com/oil"> VISIT WEBSITE</a>
+					<a href="http://yourbudgit.com/oil"> VISIT WEBSITE &#8594;</a>
 				</div>
 			</div>
 			<div class="works">
@@ -327,7 +392,7 @@ footer .socialmedia > div.medium i {
 					<h2>BudgIT</h2>
 					<p>Budgit is a civic organization that applies technology to intersect engagement with institutional improvement, to facilitate societal change</p>
 					<span>UX & UI design, Platform Design, Wordpress Theme Development</span>
-					<a href="http://yourbudgit.com">VISIT WEBSITE</a>
+					<a href="http://yourbudgit.com">VISIT WEBSITE&#8594;</a>
 				</div>
 				<div class="left col-sm-7 col-xs-12">
 				<div class="image">
@@ -341,13 +406,13 @@ footer .socialmedia > div.medium i {
 		</div>
 	</section>
 	<footer>
-		<div class="container">
+		<div id="correct"class="container">
 			<div class="row">
 				<div class="contact">
 					<h3> Got a project, an idea or just want to make contact?</h3>
 					<p>
 						<i class="fa fa-envelope"></i>
-						SEND ME AN E-MAIL
+						Send Me An E-mail
 						<span>me '@' udezekene.com</span>
 					</p>
 				</div>
